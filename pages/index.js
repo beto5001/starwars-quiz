@@ -47,7 +47,7 @@ export default function Home() {
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/omariosouto" />
+      <GitHubCorner projectUrl="https://github.com/beto5001/starwars-quiz" />
     </QuizBackground>
   );
 }
