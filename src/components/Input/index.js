@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable react/default-props-match-prop-types */
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-props-no-spreading */
