@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 import db from '../db.json';
@@ -18,7 +19,7 @@ import Button from '../src/components/Button';
 //   background-position: center;
 // `;
 
-export const QuizContainer = styled.div`
+const QuizContainer = styled.div`
   width: 100%;
   max-width: 350px;
   padding-top: 45px;
@@ -35,6 +36,9 @@ export default function Home() {
 
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>{db.title}</title>
+      </Head>
       <QuizContainer>
         <QuizLogo />
         <Widget>
@@ -42,8 +46,9 @@ export default function Home() {
             <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
-            <form onSubmit={function (infoDoEvento) {
-              infoDoEvento.preventDefault();
+            <p>{db.description}</p>
+            <form onSubmit={function (infosDoEvento) {
+              infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);
               console.log('Fazendo uma submissão por meio do react');
             }}
@@ -70,7 +75,7 @@ export default function Home() {
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/beto5001/starwars-quiz" />
+      <GitHubCorner projectUrl="https://github.com/omariosouto" />
     </QuizBackground>
   );
 }

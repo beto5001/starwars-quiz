@@ -4,22 +4,22 @@
     "description": "A LONG TIME AGO IN A GALAXY FAR, FAR AWAY....",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
+        "image": "https://66.media.tumblr.com/db53ded0463800ebe5862abbbd14475e/tumblr_oop5at87DP1rpsuhuo1_500.gif",
+        "title": "Com quantos anos Yoda morreu?",
         "description": "Essa é pra aquecer",
-        "answer": 2,
+        "answer": 0,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "450 anos",
+          "900 anos",
+          "150 anos",
+          "300 anos"
         ]
       },
       {
         "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
         "title": "Como fazer um background gradiente com css?",
         "description": "Faz tempo em haha",
-        "answer": 0,
+        "answer": 1,
         "alternatives": [
            "background: linear-gradient(#e66465, #9198e5);",
            "background: gradient(#e66465, #9198e5);"
