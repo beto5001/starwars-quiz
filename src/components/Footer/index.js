@@ -1,5 +1,8 @@
 /* eslint-disable linebreak-style */
-import styled from 'styled-components'
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable linebreak-style */
+import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
   background-color: #00000070;
