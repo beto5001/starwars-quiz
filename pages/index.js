@@ -1,3 +1,4 @@
+/* eslint-disable arrow-body-style */
 import React from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
@@ -70,12 +71,27 @@ export default function Home() {
           <Widget.Content>
             <h1>Quizes da Galera</h1>
 
-            <p>lorem ipsum dolor sit amet...</p>
+            <ul>
+              {db.external.map((link) => {
+                const [projectName, gitUser] = link
+                  .replace(/\//g, '')
+                  .replace('https:', '')
+                  .replace('vercel.app', '')
+                  .split('.');
+                return (
+                  <li>
+                    <Widget.Topic href={link}>
+                      {`${gitUser}/${projectName}`}
+                    </Widget.Topic>
+                  </li>
+                );
+              })}
+            </ul>
           </Widget.Content>
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/omariosouto" />
+      <GitHubCorner projectUrl="https://github.com/beto5001" />
     </QuizBackground>
   );
 }
